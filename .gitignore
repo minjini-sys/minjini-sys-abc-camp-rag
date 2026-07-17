@@ -1,32 +1,49 @@
-# 문서 파일 (커밋 제외 - 엑셀, 파워포인트, 워드, PDF)
+# Excel files
 *.xlsx
 *.xls
+
+# PowerPoint files
 *.pptx
 *.ppt
-*.docx
-*.doc
+
+# PDF files
 *.pdf
 
-# Python 캐시
+# Word files
+*.docx
+*.doc
+
+# Python virtual environment
+.venv/
+venv/
+env/
+
+# Python cache
 __pycache__/
 *.pyc
+*.pyo
 
-# 가상 환경
-.venv/
+# ChromaDB ( regenerated)
+chroma_db/
 
-# 로그 파일
+# Vector store exports ( regenerated)
+*.tsv
+
+# Generated slide images
+data/slides/
+
+# opencode agents
+.agents/
+
+# OS files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Temporary agent logs & session data
+.omo/
 *.log
 
-# OpenCode 실행 데이터
-.omo/
-
-# ChromaDB 벡터 저장소 데이터
+# Heavy data directories (ChromaDB, HF embedding models)
 data/chroma_yes24/
 data/hf_models/
-
-# Node.js (create_book_planning_pptx.js 사용 시)
-node_modules/
-
-# 운영체제 생성 파일
-Thumbs.db
-.DS_Store
