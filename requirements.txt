@@ -1,0 +1,9 @@
+streamlit
+pandas
+plotly
+openpyxl
+requests
+numpy<2.3
+torch
+transformers
+chromadb
